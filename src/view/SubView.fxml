@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="dentalAnchorPane" prefHeight="680.0" prefWidth="1300.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SubViewController">
+   <children>
+      <JFXTreeTableView fx:id="tableView" layoutX="12.0" layoutY="13.0" prefHeight="655.0" prefWidth="888.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="13.0">
+         <effect>
+            <DropShadow color="#e8e8e8" />
+         </effect>
+         <padding>
+            <Insets left="7.0" />
+         </padding>
+         <columnResizePolicy>
+            <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy></JFXTreeTableView>
+           <Pane layoutX="916.0" layoutY="13.0" prefHeight="655.0" prefWidth="381.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="13.0">
+             <children>
+
+                <HBox layoutX="170.0" layoutY="21.0" prefHeight="66.0" prefWidth="190.0">
+                   <children>
+                      <JFXButton onAction="#back" prefHeight="38.0" prefWidth="180.0" style="-fx-background-color: #effeee; -fx-background-radius: 0px 190px 160px 0px; -fx-font-size:14px;" text="Back" textFill="#121212" />
+                   </children>
+                </HBox>
+                <JFXTextField fx:id="searchTF" focusColor="#0083a5" labelFloat="true" layoutX="14.0" layoutY="87.0" maxWidth="360.0" minWidth="232.0" prefHeight="35.0" prefWidth="360.0" promptText="Search" unFocusColor="#0083a5">
+                   <font>
+                      <Font size="13.0" />
+                   </font></JFXTextField>
+         </children>
+         <effect>
+            <DropShadow color="#cdcdcd" />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

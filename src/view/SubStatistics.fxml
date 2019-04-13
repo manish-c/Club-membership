@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="StatAnchorPane" prefHeight="508.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SubStatisticsController">
+   <children>
+      <BarChart fx:id="barChart" layoutX="-1.0" layoutY="14.0" prefHeight="469.0" prefWidth="738.0" title="New Users Statistics" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <xAxis>
+          <CategoryAxis endMargin="10.0" label="Month" side="BOTTOM" startMargin="10.0" fx:id="x" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="y" autoRanging="false" label="Number of Users" minorTickCount="1" minorTickLength="10.0" side="LEFT" tickLabelGap="0.0" tickUnit="1.0" upperBound="10.0" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>

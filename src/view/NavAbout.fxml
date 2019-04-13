@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AboutAnchorPane" prefHeight="280.0" prefWidth="600.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NavAboutController">
+   <children>
+      <ImageView fitHeight="156.0" fitWidth="177.0" layoutX="20.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../src/logo.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="226.0" prefHeight="95.0" prefWidth="360.0" text="NJIT CLUB" textFill="#5b5b5b">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="226.0" layoutY="84.0" prefHeight="82.0" prefWidth="302.0" text="Java Project." wrapText="true" />
+      <Label layoutX="218.0" layoutY="158.0" text="Developed by  " />
+      <Label layoutX="298.0" layoutY="158.0" text="MANISH CHANDWANEY">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+
+   </children>
+</AnchorPane>
